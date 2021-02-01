@@ -1,5 +1,6 @@
 {
   "hosting": {
+    "site": "fire-extinguisher",
     "public": "dist",
     "ignore": [
       "firebase.json",
