@@ -34,10 +34,6 @@ jobs:
       - name: Install dependencies 👨🏻‍💻
         run: npm ci
 
-
-      - name: Run tests 🧪
-        run: npm run test
-
       - name: Build application 🧱
         run: npm run generate
       - uses: w9jds/firebase-action@master
