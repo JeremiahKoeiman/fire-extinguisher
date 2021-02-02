@@ -1,6 +1,6 @@
 <template>
     <div>
-
+        Hello, I am route /products/id
     </div>
 </template>
 
