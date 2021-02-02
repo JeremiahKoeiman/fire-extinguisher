@@ -1,4 +1,6 @@
 <template>
+<div>
+  <Nav/>
   <div class="container">
     <Hero/>
     <LargeCardDisplay 
@@ -13,6 +15,8 @@
       :smallCardsSection="cardInfo"
     />
   </div>
+</div>
+
 </template>
 
 <script>
