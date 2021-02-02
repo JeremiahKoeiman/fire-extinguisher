@@ -2,8 +2,12 @@
     <div class="container">
         <h4 class="header">{{ cardsSection.title }}</h4>
         <p class="snippet">{{ cardsSection.snippet }}</p>
-            <div class="card-container">
-
+            <div class="cards-container">
+                <LargeCard
+                    v-for="card in cardsSection.cards"
+                    :key="card.image"
+                    :card="card"
+                />
             </div>
     </div>
 </template>
@@ -16,7 +20,7 @@
 
 <style scoped>
     .container {
-        margin-top: 2rem;
+        margin-top: 3rem;
     }
     .header {
         font-weight: 700;

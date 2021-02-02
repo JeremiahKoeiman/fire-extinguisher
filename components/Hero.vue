@@ -24,7 +24,7 @@ export default {};
   position: relative;
   display: flex;
   padding: 5rem 0;
-  margin-bottom: 20rem;
+  margin-bottom: 25rem;
   align-items: flex-start;
   justify-content: space-between;
 }
