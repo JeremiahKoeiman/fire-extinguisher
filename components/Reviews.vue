@@ -1,7 +1,7 @@
 <template>
     <div>
         <h3>Customer reviews</h3>
-        <div v-if="!$fetchState.pending">
+        <div v-if="!$fetchState.pending || !undefined || !null">
             <ReviewCard
                 v-for="reviewer in reviewers.results"
                 :key="reviewer.login.uuid"
@@ -17,7 +17,9 @@
 <script>
     export default {
         data() {
-            reviewers: []
+            return {
+                reviewers: []
+            }
         },
         async fetch() {
             this.reviewers = await fetch(
